@@ -1,6 +1,6 @@
-/********************************************************************
-                        Common Styles
-********************************************************************/
+/***********************************************************************************************************
+                        Common Style
+************************************************************************************************************/
 body{
     margin: 0;
     font-family: 'Poppins', sans-serif;  
@@ -43,19 +43,19 @@ h3{
     align-items: center;
 }
 
-.horizontal-padding{
+.level-padding{
     padding-left: 30px;
     padding-right: 30px;  
 }
 
-/********************************************************************
-                        Header Styles
-********************************************************************/
+/*************************************************************************************************************
+                                     Header 
+*******************************************************************************************************************/
 header{    
     background-color:#2D25A0;      
 }
 
-/**************            Navigation           ********************/
+/**************************************************  Navigation Bar********************************************************/
 .navigation,
 .header-banner{    
     display: flex;
@@ -95,7 +95,7 @@ nav{
 }
 
 
-/**************            Header Banner           ********************/
+/******************************************** Header Banner**********************************************************/
 .header-banner{
     padding-top: 54px;
     padding-bottom: 86px;
@@ -127,9 +127,9 @@ nav{
 
 
 
-/********************************************************************
-                        Players Styles
-********************************************************************/
+/****************************************************************************************************************
+                                    Players
+*****************************************************************************************************************/
 .top-players{
     margin-top: 70px;
     margin-bottom: 165px;    
@@ -181,9 +181,9 @@ nav{
 
 
 
-/********************************************************************
-                        Highlights Styles
-********************************************************************/
+/******************************************************************************************************************
+                                                           Highlights 
+********************************************************************************************************************/
 .highlights-section{
     display: flex;
     justify-content: center;
@@ -200,17 +200,16 @@ nav{
     margin-right: 33px;
 }
 
-.highlights .highlights-left h2{
-    margin: 0;
-    font-weight: 700;
-}
-
 .highlights .highlights-left p{
     margin-top: 8px;
     margin-bottom: 40px;
     font-size: 16px;
     color: #6C6C6C;
     line-height: 28px;
+}
+.highlights .highlights-left h2{
+    margin: 0;
+    font-weight: 700;
 }
 
 .highlights .highlights-left a i{    
@@ -229,9 +228,9 @@ nav{
 
 
 
-/********************************************************************
-                        Result Styles
-********************************************************************/
+/**************************************************************************************************************
+                                                      Result
+**********************************************************************************************************/
 .result-section{    
     display: flex;
     justify-content: center;
@@ -245,8 +244,8 @@ nav{
 
 .result-section .section-title h1{
     text-align: center;
-    color: #2D25A0;
-    border-bottom: 5px solid #b9b9b9;   
+    color: #12d181;
+    border-bottom: 5px solid #80a529;   
     margin-top: 0; 
     margin-bottom: 10px;
 }
@@ -272,8 +271,8 @@ nav{
 .result-box{
     display: flex;
     justify-content: center;
-    box-shadow: 0 10px 30px rgb(44 62 80 / 50%);
-    border-radius: 12px;
+    box-shadow: 0 15px 40px rgb(44 62 80 / 50%);
+    border-radius: 10px;
     padding: 20px 10px;
 }
 
@@ -293,23 +292,28 @@ nav{
     margin: 0;
     color: #727272;
 }
-
-
+.explore-section{
+    color: #E02C6D;
+    padding-top: 0px;
+}
 
 .copa-america-logo img{
-    width: 50px;
-    
+    width: 100%;
+
 }
-.fifa-info{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-  }
 
+.explore-section, .copa-info{
+     
+   display:flex;
+   flex-direction: column;
+   padding-left: 65px;
+   margin-left: 30px;
 
-/********************************************************************
-                        Buy Tshirt Styles
-********************************************************************/
+}
+
+/**********************************************************************************************************
+                        Tshirt
+***********************************************************************************************************/
 .tshirt-section{
     background-color: #2e206d;
     display: flex;
@@ -368,9 +372,9 @@ nav{
     padding: 50px 30px;
 }
 
-/********************************************************************
-                        Footer Styles
-********************************************************************/
+/*********************************************************************************************************************************
+                        Footer
+***********************************************************************************************************************************/
 footer{
     display: flex;
     flex-direction: row;
@@ -418,16 +422,16 @@ footer .copyright{
 
 
 
-/********************************************************************
-                        Responsive Media Query
-********************************************************************/
+/**************************************************************************************************************
+                                            Media Queries
+*************************************************************************************************************/
 
 
 
-/* **********     For Small Laptop and Small Desktop     ***********/
-@media only screen and (min-width:769px) and (max-width:1024px){
+/* ************************FSmall Laptop or Small Desktop     ***********/
+@media only screen and (min-width:689px) and (max-width:1024px){
     
-    /* -------       Common/Shared Styles          ------- */
+    /* -------       ***************Shared Styles*****************          ------- */
     h1{
         font-size: 45px;
     }
@@ -444,7 +448,7 @@ footer .copyright{
         width: 760px;    
     }
 
-    /* -------         Header Styles          ------- */
+    
     .nav-items ul li a{       
         margin-right: 20px;      
     }    
@@ -467,19 +471,6 @@ footer .copyright{
         width: 350px;   
     } 
     
-  
-
-
-    
-
-
-
-
-
-
-
-
-
 
 
     /* -------       T-shirt Styles          ------- */
@@ -492,9 +483,9 @@ footer .copyright{
 
 
 
-/* **********     For iPad and Tablet   ***********/
+/* *********For iPad & Tablet ***********/
 @media only screen and (min-width:481px) and (max-width:768px){   
-   /* -------       Common/Shared Styles          ------- */
+
     h1{
         font-size: 36px;
     }
@@ -525,7 +516,7 @@ footer .copyright{
     }
 
 
-    /* -------         Header Styles          ------- */
+    /* -------   Header------- */
     .mobile-menu{
         display: block;
         color: #FFFFFF;
@@ -550,7 +541,7 @@ footer .copyright{
     }
 
 
-    /* -------       Players Styles          ------- */
+    /* -------  Players ------- */
     .players{ 
         grid-gap: 10px;    
         grid-template-columns: repeat(2, 1fr);      
@@ -569,7 +560,7 @@ footer .copyright{
     }
 
 
-    /* -------       Highlights Styles          ------- */
+    /* -------  Highlight ------- */
     .highlights .highlights-left{       
         margin-right: 0;
     }
@@ -586,7 +577,7 @@ footer .copyright{
     }      
 
 
-    /* -------       T-shirt Styles          ------- */
+    /* ------- T-shirt ------- */
     .tshirt-section .tshirt-text{
         padding-right: 0;
     }    
@@ -598,7 +589,7 @@ footer .copyright{
     }
 
     
-    /* -------       Footer Styles          ------- */
+    /* -------  Footer ------- */
     footer .container img{    
         width: 300px;
     }    
@@ -608,9 +599,9 @@ footer .copyright{
 
 
 
-/* **********     Smart Phone   ***********/
+/* ********** Smart Phone ***********/
 @media only screen and (max-width: 480px){   
-   /* -------       Common/Shared Styles          ------- */
+   /* ------- Shared Style------- */
     h1{
         font-size: 36px;
     }
@@ -641,7 +632,7 @@ footer .copyright{
     }   
 
 
-    /* -------         Header Styles          ------- */
+    /* -------Header Styles ------- */
     .mobile-menu{
         display: block;
         color: #FFFFFF;
@@ -667,7 +658,7 @@ footer .copyright{
 
 
 
-    /* -------       Players Styles          ------- */
+    /* ------- Players------- */
     .top-players{
         margin-top: 50px;
         margin-bottom: 60px;           
@@ -692,7 +683,7 @@ footer .copyright{
 
 
 
-    /* -------       Highlights Styles          ------- */
+    /* ------Highlights------- */
     .highlights-section{
         margin-bottom: 50px;        
     }
@@ -706,7 +697,7 @@ footer .copyright{
     }   
 
 
-    /* -------       Results Styles          ------- */
+    /* -------  Result------- */
     .result-section{
         margin-top: 50px;            
         margin-bottom: 30px;    
@@ -732,7 +723,7 @@ footer .copyright{
     }
 
 
-    /* -------       T-shirt Styles          ------- */
+    /* ------- T-shirt------- */
     .tshirt-section{
         margin-top: 50px;
         margin-bottom: 50px;
@@ -756,7 +747,7 @@ footer .copyright{
     } 
 
 
-    /* -------         Footer Styles          ------- */
+    /* -------  Footer  ------- */
     footer{           
         padding-bottom: 100px;
     }
