@@ -1,0 +1,767 @@
+/********************************************************************
+                        Common Styles
+********************************************************************/
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;  
+    background-color: #FFFFFF;  
+}
+
+h1{
+    font-size: 64px;
+}
+
+h2{
+    font-size: 48px;
+}
+
+h3{
+    font-size: 28px;
+}
+
+.custom-button{
+    text-decoration: none;
+    background-color: #E02C6D;
+    padding: 10px 24px;
+    font-size: 16px;
+    color: #FFFFFF;
+    transition: all 0.3s ease-in-out;
+}
+
+.custom-button:hover{   
+    background-color: #9e013b;    
+}
+
+.container{
+    width: 1163px;    
+}
+
+.half-width-flexbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.horizontal-padding{
+    padding-left: 30px;
+    padding-right: 30px;  
+}
+
+/********************************************************************
+                        Header Styles
+********************************************************************/
+header{    
+    background-color:#2D25A0;      
+}
+
+/**************            Navigation           ********************/
+.navigation,
+.header-banner{    
+    display: flex;
+    justify-content: center;
+}
+
+nav{    
+    padding-top: 42px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mobile-menu{
+    display: none;
+}
+
+.nav-items ul{
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+
+.nav-items ul li a{
+    text-decoration: none;
+    margin-right: 36px;
+    color: #FFFFFF;
+    transition: all 0.3s ease;
+}
+
+.nav-items ul li:hover a{
+    color: #E02C6D;
+}
+
+.nav-login .custom-button i{
+    margin-right: 8px;
+}
+
+
+/**************            Header Banner           ********************/
+.header-banner{
+    padding-top: 54px;
+    padding-bottom: 86px;
+}
+
+.header-banner-left{
+    margin-right: 51px;
+}
+
+.header-banner-left h1{
+    color: #FFFFFF;
+    margin: 0 0 27px 0;
+}
+
+.header-banner-left .custom-button i{
+    margin-left: 8px;
+}
+
+.header-banner-right{
+    margin-left: 51px;
+}
+
+.header-banner-right img{
+    width: 556px;   
+}
+
+
+
+
+
+
+/********************************************************************
+                        Players Styles
+********************************************************************/
+.top-players{
+    margin-top: 70px;
+    margin-bottom: 165px;    
+    display: flex;
+    justify-content: center;
+}
+
+.players{
+    margin: 0 10px;   
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+
+.player{
+    max-width: 330px;
+    padding: 15px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease-in;
+}
+
+.player:hover{
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+.player img{
+    width: 100%;
+}
+
+
+.player h3{
+    margin-top: 16px;
+    margin-bottom: 0;
+    color: #18191F;
+    font-weight: 700;
+}
+
+
+.player p{
+    margin-top: 10px;
+    margin-bottom: 18px;
+    color: #6C6C6C;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+
+
+
+/********************************************************************
+                        Highlights Styles
+********************************************************************/
+.highlights-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 158px;
+}
+
+.highlights{
+    margin: 0 25px;
+}
+
+.highlights .highlights-left{
+    margin-top: 0;
+    margin-right: 33px;
+}
+
+.highlights .highlights-left h2{
+    margin: 0;
+    font-weight: 700;
+}
+
+.highlights .highlights-left p{
+    margin-top: 8px;
+    margin-bottom: 40px;
+    font-size: 16px;
+    color: #6C6C6C;
+    line-height: 28px;
+}
+
+.highlights .highlights-left a i{    
+    margin-left: 8px;
+}
+
+.highlights .highlights-right{
+    margin-left: 33px;
+}
+
+.highlights .highlights-right img{
+    width: 567px;   
+}
+
+
+
+
+
+/********************************************************************
+                        Result Styles
+********************************************************************/
+.result-section{    
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;    
+}
+
+.result-section .section-title{
+    display: flex;
+    justify-content: center;   
+}
+
+.result-section .section-title h1{
+    text-align: center;
+    color: #2D25A0;
+    border-bottom: 5px solid #b9b9b9;   
+    margin-top: 0; 
+    margin-bottom: 10px;
+}
+
+.result{
+    margin-top: 50px;    
+}
+
+.result h2,
+.result p{
+    margin: 0;
+}
+
+.result h2{
+    font-weight: 700;
+    color: #E02C6D;
+}
+
+.result p{
+    margin-bottom: 20px;
+}
+
+.result-box{
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 10px 30px rgb(44 62 80 / 50%);
+    border-radius: 12px;
+    padding: 20px 10px;
+}
+
+.result-box div{
+    display: flex;    
+    align-items: center;
+    padding: 15px 20px;  
+}
+
+.result-box img{
+    width: 90px;
+    height: 70px;
+    margin: 0 25px;   
+}
+
+.result-box h1{
+    margin: 0;
+    color: #727272;
+}
+
+
+
+.copa-america-logo img{
+    width: 50px;
+    
+}
+.fifa-info{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+
+
+/********************************************************************
+                        Buy Tshirt Styles
+********************************************************************/
+.tshirt-section{
+    background-color: #2e206d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.tshirt-section .tshirt-text{
+    padding-right: 30px;
+}
+
+.tshirt-section .tshirt-text h2{
+    color: #ebebeb;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 700;
+}
+
+.tshirt-section .tshirt-text p{
+    color: #FFFFFF;
+    font-size: 18px;
+}
+
+.tshirt-section .tshirt-text p a{
+    text-decoration: none;
+    color: #ff703c;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.tshirt-section .tshirt-text p a:hover{
+    color: sandybrown;
+}
+
+.tshirt-section .tshirt-text h3{
+    color: #FFFFFF;
+    margin-bottom: 0;
+}
+
+.tshirt-section .tshirt-text h2 sup{
+    font-size: 0.5em;
+    color: red;
+    margin-right: 10px;    
+}
+
+.tshirt-section .tshirt-text .price{
+    margin-bottom: 30px;
+}
+
+.tshirt-section .tshirt-image img{
+    width: 550px;
+    padding: 50px 30px;
+}
+
+/********************************************************************
+                        Footer Styles
+********************************************************************/
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+footer .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .container img{    
+    width: 480px;
+}
+
+footer .social-icon{
+    display: flex;
+    margin: 20px 0;
+}
+
+footer .social-icon .icon-background{
+    width: 32px;
+    height: 32px;
+    margin: 0 10px;
+    background-color: rgba(11, 13, 23,0.1);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .social-icon i{   
+    font-size: 16px;
+    color: #969BAB;
+    opacity: 1!important;
+    
+}
+
+footer .copyright{
+    color: #000000;
+    font-size: 18px;
+}
+
+
+
+/********************************************************************
+                        Responsive Media Query
+********************************************************************/
+
+
+
+/* **********     For Small Laptop and Small Desktop     ***********/
+@media only screen and (min-width:769px) and (max-width:1024px){
+    
+    /* -------       Common/Shared Styles          ------- */
+    h1{
+        font-size: 45px;
+    }
+    
+    h2{
+        font-size: 35px;
+    }
+    
+    h3{
+        font-size: 22px;
+    }
+
+    .container{
+        width: 760px;    
+    }
+
+    /* -------         Header Styles          ------- */
+    .nav-items ul li a{       
+        margin-right: 20px;      
+    }    
+
+    .header-banner-right img{
+        width: 380px;
+    }
+
+
+    /* -------       Players Styles          ------- */
+    .players{     
+        grid-template-columns: repeat(3, 1fr);     
+        margin:0;  
+        grid-gap: 15px;
+    }
+
+
+    /* -------       Highlights Styles          ------- */
+    .highlights .highlights-right img{
+        width: 350px;   
+    } 
+    
+  
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    /* -------       T-shirt Styles          ------- */
+    .tshirt-section .tshirt-image img{
+        width: 350px;
+        padding: 20px 20px;
+    }
+}
+
+
+
+
+/* **********     For iPad and Tablet   ***********/
+@media only screen and (min-width:481px) and (max-width:768px){   
+   /* -------       Common/Shared Styles          ------- */
+    h1{
+        font-size: 36px;
+    }
+    
+    h2{
+        font-size: 28px;
+    }
+    
+    h3{
+        font-size: 22x;
+    }
+
+    .container{
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;    
+    }
+
+    .horizontal-padding{
+        padding-left: 20px;
+        padding-right: 20px;  
+    }
+
+    .half-width-flexbox{
+        display: flex;
+        flex-direction: column;        
+        align-items: center;
+    }
+
+
+    /* -------         Header Styles          ------- */
+    .mobile-menu{
+        display: block;
+        color: #FFFFFF;
+        font-size: 20px;
+    }
+    
+    .nav-items ul{
+        display: none;        
+    }
+
+    .header-banner-left{
+        margin-right: 0;
+    }      
+    
+    .header-banner-right{
+        margin-left: 0;
+    }
+
+    .header-banner-right img{
+        width: 100%;
+        margin-top: 50px;
+    }
+
+
+    /* -------       Players Styles          ------- */
+    .players{ 
+        grid-gap: 10px;    
+        grid-template-columns: repeat(2, 1fr);      
+    }
+
+    .top-players.horizontal-padding{
+        padding-left: 3px;
+        padding-right: 3px;  
+    }
+        
+    .player p{
+        margin-top: 5px;
+        margin-bottom: 5px;       
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+
+    /* -------       Highlights Styles          ------- */
+    .highlights .highlights-left{       
+        margin-right: 0;
+    }
+
+    .highlights .highlights-right{
+        margin-left: 0;
+    }
+
+    .highlights .highlights-right img{
+        width: 100%;
+        margin-top: 50px;
+        margin-left: 0;
+        padding-left: 0;   
+    }      
+
+
+    /* -------       T-shirt Styles          ------- */
+    .tshirt-section .tshirt-text{
+        padding-right: 0;
+    }    
+    
+    .tshirt-section .tshirt-image img{
+        width: 100%;
+        padding: 0px;
+        margin-top: 70px;
+    }
+
+    
+    /* -------       Footer Styles          ------- */
+    footer .container img{    
+        width: 300px;
+    }    
+}
+
+
+
+
+
+/* **********     Smart Phone   ***********/
+@media only screen and (max-width: 480px){   
+   /* -------       Common/Shared Styles          ------- */
+    h1{
+        font-size: 36px;
+    }
+    
+    h2{
+        font-size: 28px;
+    }
+    
+    h3{
+        font-size: 22x;
+    }
+
+    .container{
+        width: 100%;
+        padding-left: 5px;
+        padding-right: 5px;    
+    }
+
+    .horizontal-padding{
+        padding-left: 10px;
+        padding-right: 10px;  
+    }
+
+    .half-width-flexbox{
+        display: flex;
+        flex-direction: column;        
+        align-items: center;
+    }   
+
+
+    /* -------         Header Styles          ------- */
+    .mobile-menu{
+        display: block;
+        color: #FFFFFF;
+        font-size: 20px;
+    }
+    
+    .nav-items ul{
+        display: none;        
+    }  
+
+    .header-banner-left{
+        margin-right: 0;
+    }      
+    
+    .header-banner-right{
+        margin-left: 0;
+    }
+
+    .header-banner-right img{
+        width: 100%;
+        margin-top: 50px;
+    }
+
+
+
+    /* -------       Players Styles          ------- */
+    .top-players{
+        margin-top: 50px;
+        margin-bottom: 60px;           
+    }
+
+    .top-players.horizontal-padding{
+        padding-left: 3px;
+        padding-right: 3px;  
+    }
+
+    .players{ 
+        grid-gap: 24px;    
+        grid-template-columns: repeat(1, 1fr);      
+    }
+    
+    .player p{
+        margin-top: 5px;
+        margin-bottom: 5px;       
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+
+
+    /* -------       Highlights Styles          ------- */
+    .highlights-section{
+        margin-bottom: 50px;        
+    }
+
+    .highlights .highlights-left{       
+        margin-right: 0;
+    }
+
+    .highlights .highlights-right{
+        margin-left: 0;
+    }   
+
+
+    /* -------       Results Styles          ------- */
+    .result-section{
+        margin-top: 50px;            
+        margin-bottom: 30px;    
+    }    
+    
+    .result-section .section-title{
+       margin-bottom: 0;
+       
+    }
+
+    .result-section .result{
+        margin-top: 25px;
+    }
+    
+    .result-box div{       
+        padding: 15px 10px;  
+    }
+    
+    .result-box img{
+        width: 70px;
+        height: 50px;
+        margin: 0 5px;   
+    }
+
+
+    /* -------       T-shirt Styles          ------- */
+    .tshirt-section{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .tshirt-section .tshirt-text{
+        padding-right: 0;
+    }
+
+    .highlights .highlights-right img{
+        width: 100%;
+        margin-top: 50px;
+        margin-left: 0;
+        padding-left: 0;   
+    }   
+    
+    .tshirt-section .tshirt-image img{
+        width: 100%;
+        padding: 0px;
+        margin-top: 70px;
+    } 
+
+
+    /* -------         Footer Styles          ------- */
+    footer{           
+        padding-bottom: 100px;
+    }
+
+    footer .container img{    
+        width: 200px;
+    }    
+}
